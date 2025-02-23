@@ -1,0 +1,114 @@
+<?php
+include("Header2.html");
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="register1.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 initial-scale=1.0 ,maximum-scale=0.8, user-scalable=no" >
+        <!-- java script connection -->
+
+        <script>
+        console.log("JS file loaded successfully");
+    </script>
+
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <div class="box">
+
+            <!-- From Uiverse.io by Yaya12085 -->
+            <form id="form" class="form" Action="register.php" Method="Post">
+                <p class="title">Register Now</p>
+                <p class="message">Signup now and get full access to
+                    BoardLinker. </p>
+                <div class="flex">
+
+                    <label>
+                        <input id="fname" name="fname" placeholder="First name"
+                            type="text" class="input">
+                        <span id="fname_error"
+                            style="color: rgb(220, 0, 0); display: none;"
+                            class="error-message"></span>
+                    </label>
+
+                    <label>
+                        <input id="lname" name="lname" placeholder="Last name"
+                            type="text" class="input">
+                        <span id="lname_error"
+                            style="color: rgb(220, 0, 0); display: none;"
+                            class="error-message"></span>
+
+                    </label>
+                </div>
+                <label class="inpt">
+                    <input id="username" name="username" placeholder="Username"
+                        type="text" class="input" class="inpt">
+                    <span id="username_error"
+                        style="color: rgb(220, 0, 0); display: none;"
+                        class="error-message"></span>
+
+                </label>
+
+                <label class="inpt">
+                    <input id="email" name="email" placeholder="Email"
+                        type="email" class="input">
+                    <span id="email_error"
+                        style="color: rgb(220, 0, 0); display: none;"
+                        class="error-message"></span>
+
+                </label>
+
+                <label class="inpt">
+                    <input id="password1" placeholder="Password" type="password"
+                        class="input">
+                    <span id="password1_error"
+                        style="color: rgb(220, 0, 0); display: none;"
+                        class="error-message"></span>
+
+                </label>
+
+                <label class="inpt">
+                    <input id="password2" name="password"
+                        placeholder="Confirm password" type="password"
+                        class="input">
+                    <span id="password_error"
+                        style="color: rgb(220, 0, 0); display: none;"></span>
+                </label>
+
+                <hr
+                    style="height: 1px; background-color: rgb(87, 87, 87); border: none;">
+                <!-- From Uiverse.io by halitgurpinar -->
+                <div class="radio-input">
+                    <label>
+                        <input type="radio" id="value_1" name="value-radio"
+                            value="1" />
+                        <span>Renter</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="value_2" name="value-radio"
+                            value="2" />
+                        <span>Property Owner</span>
+                    </label>
+                    <div class="selection"></div>
+
+                </div><span id="radio_input_error"
+                    style="color: rgb(220, 0, 0); display: none;"
+                    class="error-message"></span>
+
+                <button type="submit" class="submit">Submit</button>
+                <p class="signin">Already have an acount ? <a
+                        href="#">Signin</a> </p>
+            </form>
+
+        </div>
+
+        <script src="register1.js"></script>
+
+    </body>
+
+</html>

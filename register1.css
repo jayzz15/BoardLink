@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+ 
+ 
+    font-family: Arial, sans-serif;
+    background:#252525;
+        /* From Uiverse.io by Codewithvinay */ 
+
+}
+
+/**/
+/* From Uiverse.io by Yaya12085 */ 
+
+.form {
+
+  
+  box-shadow: 0px 7px 22px 12px rgba(0,0,0,0.1),11px 0px 15px -3px rgba(0,0,0,0.1);
+
+  border: 0.2px solid rgba(62, 62, 62, 0.98);
+    padding:1%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    padding: 20px;
+    position: relative;
+  
+    
+    color:aqua;
+    border-radius: 15px;
+    background: #111111;
+    
+
+  }
+  
+  .title {
+    font-size: 28px;
+    color: rgba(167, 139, 250, 1);
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color:rgba(167, 139, 250, 1);
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color:rgba(167, 139, 250, 1);;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+   color:#8c8c8c;
+   
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: rgba(167, 139, 250, 1);
+  }
+  
+  .signin a:hover {
+    text-decoration: underline rgba(167, 139, 250, 1);;
+  }
+  
+  .flex {
+    padding:0;
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  
+ 
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: rgba(167, 139, 250, 1);;
+    padding: 10px;
+    border-radius: 10px;
+    color:#0d0d0d;
+    font-size: 16px;
+    transform: .3s ease;
+    transition:1.3s;
+  }
+  
+  .submit:hover {
+
+    background-color: rgb(131, 105, 208);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+  .box{
+    background:none;
+    padding-top:3%;
+    
+    width:80%;
+    height:100%;
+    border:none;
+    margin: 0 auto; /* Auto margins horizontally center it */
+    text-align: center;
+  }
+
+  .input_radio{
+    color: grey;
+    background-color:none;
+    border:solid 2px white;
+    padding:1%;
+  }
+
+  .renter{
+    color:red;
+  }
+
+
+  /* From Uiverse.io by halitgurpinar */ 
+.radio-input input {
+    display: none;
+  }
+  
+  .radio-input {
+    margin-top:3%;
+    margin: 0 auto;
+    --container_width: 310px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color:#252525;
+    color: #f1f1f1;
+    width: var(--container_width);
+    overflow: hidden;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+  }
+  
+  .radio-input label {
+    
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    letter-spacing: -1px;
+    font-size: 0.7em;
+
+    
+  }
+  
+  .selection {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: calc(var(--container_width) / 2);
+    z-index: 0;
+    left: 0;
+    top: 0;
+    transition: 0.15s ease;
+  }
+  
+  .radio-input label:nth-child(1):has(input:checked) {
+    color:none;
+  } 
+  .radio-input label:nth-child(2):has(input:checked) {
+    color:none;
+  }
+  .radio-input label:nth-child(1):has(input:checked) ~ .selection {
+    background-color:rgba(167, 139, 250, 1);
+    display: inline-block;
+  }
+  .radio-input label:nth-child(2):has(input:checked) ~ .selection {
+    background-color: rgba(167, 139, 250, 1);
+    display: inline-block;
+  }
+  .radio-input label:nth-child(1):has(input:checked) ~ .selection {
+    transform: translateX(calc(var(--container_width) * 0 / 2));
+  }
+  
+  .radio-input label:nth-child(2):has(input:checked) ~ .selection {
+    transform: translateX(calc(var(--container_width) * 1 / 2));
+  }
+  
+
+  
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    background-color:#252525;
+    color:#fff;
+
+  }
+
+#fname_error {
+  padding-left:13px;
+  text-align: left;
+    font-size: 10px;
+    margin-top: 7px;
+}
+ 
+
+#lname_error {
+  padding-left:13px;
+  text-align: left;
+  font-size: 10px;
+  margin-top: 7px;
+ 
+}
+
+#username_error {
+  padding-left:13px;
+  text-align: left;
+  font-size: 10px;
+  margin-top: 7px;
+  
+}
+
+  #email_error{
+  padding-left:13px;
+  text-align: left;
+  font-size: 10px;
+  margin-top: 7px;
+  
+}
+
+#password_error{
+  padding-left:13px;
+  text-align: left;
+  font-size: 10px;
+  margin-top: 7px;
+}
+
+#password1_error{
+  padding-left:13px;
+  text-align: left;
+  font-size: 10px;
+  margin-top: 7px;
+}
+
+
+.inpt{
+  margin-top:2%;
+}
+
+#radio_input_error{
+  padding-left:13px;
+  text-align: left;
+  font-size: 10px;
+  margin-top: 7px;
+}
+@media only screen and (max-width:768px){
+  .box{
+    margin-top: 10rem;
+  }
+}
+
