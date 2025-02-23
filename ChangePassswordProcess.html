@@ -1,0 +1,79 @@
+
+
+
+<?php
+session_start();
+$TOKEN = $_GET['token'] ?? $_SESSION['token'] ?? '';
+$_SESSION['token'] = $TOKEN;
+?>
+
+
+<?php include("Header2.html"); ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=0.8, user-scalable=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="Changepass.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Rubik:ital,wght@0,300..900&display=swap" rel="stylesheet">
+  <title>FP</title>
+</head>
+
+<body>
+
+
+  <form id="resetForm" class="form" method="POST" action="process-reset-password.php">
+    <input type="hidden" name="token" value="<?= htmlspecialchars($TOKEN) ?>">
+
+
+    <p class="form-title">Change Password</p>
+
+
+
+    <?php if (isset($_SESSION['error'])): ?>
+      <div class="error-message" style="color: red; background:none; padding: 10px; margin: 10px 0;">
+        <?= $_SESSION['error'];
+        unset($_SESSION['error']); ?>
+      </div>
+    <?php endif; ?>
+
+    <?php if (isset($_SESSION['success'])): ?>
+      <div class="success-message" style="color: green; background:none; padding: 10px; margin: 10px 0;">
+        <?= $_SESSION['success'];
+        unset($_SESSION['success']); ?>
+      </div>
+    <?php endif; ?>
+
+
+
+
+    <div id="password" class="notifications"></div>
+
+    <div class="input-container">
+      <input type="text" id="password1" placeholder="New Password" name="password">
+
+      <span id="password1_error" style="color: rgb(220, 0, 0); display: none;" class="error-message"></span>
+    </div>
+    <br>
+    <div class="input-container">
+      <input type="text" id="password_confirmation" placeholder="Repeat New Password" name="password_confirmation">
+
+      <span id="password_error" style="color: rgb(220, 0, 0); display: none;"></span>
+    </div>
+
+    <button type="submit" class="submit" id="sendButton">Change</button>
+  </form>
+
+  <script src="register1.js"></script>
+  
+</body>
+
+</html>
