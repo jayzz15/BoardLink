@@ -1,0 +1,129 @@
+@media only screen and (max-width:550px) {
+   
+   Section .Sec2Con{
+    display: grid;
+    place-items: center;
+   }
+   .card{
+    display: block;
+    max-width: 390px;
+   }
+   #prks{
+      font-size: 20px;
+   }
+   .process{
+    flex-direction: column;
+   }
+   #about{
+
+    max-width: 390px;
+   }
+  
+   .Description{
+      max-width: fit-content;
+      font-size: 20px;
+      display: block;
+      margin-right: 1.2rem;
+   }
+.Description p{
+      margin-left: 2.3rem;
+   }
+   .DISPLAYF{
+    text-align: center;
+    flex-direction: column;
+   }  
+   .MAP{
+    flex-direction: column;
+    max-width: 390px;
+   display: grid;
+   place-self: center;
+   }
+   .wrw{
+      width: 380px;
+   }
+   .wrw .who{
+      font-size: 25px;
+   }
+   iframe{
+    width: 99%;
+   }
+   .FrontText .D1{
+      align-items: baseline;
+      margin: 2rem;
+      text-align: justify;
+      font-size: 30px;
+   }
+   .FrontText .D2{
+      font-size: 25px;
+      text-align: justify;
+      margin-left: 2.4rem;
+   }
+   h2 .shine{
+      font-size: 25px;
+   }
+   .boxxx .loc{
+      font-size: 25px;
+   }
+   .con_wrapper{
+      max-width: 90%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+   }
+   .con_formgroup{
+      width: 70%;
+      padding-left: 1.3rem;
+   }
+   .svg .cts{
+      font-size: 25px;
+   }
+   #rot{
+      margin-left: 1.3rem;
+   }
+   #send-msg{
+      margin-left: 1.5rem;
+   }
+   #WHO{
+      max-width: 390px;
+      display: grid;
+      place-self: center;
+      
+   }
+  }
+ 
+body{
+   max-width: 100%;
+   -webkit-text-size-adjust:none;
+   -ms-text-size-adjust:none;
+   text-size-adjust: none;
+   zoom: 1;
+   -moz-transform: scale(0.1);
+   -ms-transform: scale(1);
+   -o-transform: scale(1);
+   -webkit-transform: scale(1);
+   transform: scale(1);
+}
+.FrontText{
+    font-size: calc(1rem + 1vw);
+    line-height: 1.5;
+}
+@media only screen and (max-width:344px) {
+   .MAP{
+      margin-left: 2rem;
+   }
+}
+@media only screen and (max-width:768px){
+   .con_wrapper{
+      max-width: 90%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+   }
+}
+@media only screen and (max-width: 1440px) {
+   section{
+      display: grid;
+      place-items: center;
+   }
+}
+
